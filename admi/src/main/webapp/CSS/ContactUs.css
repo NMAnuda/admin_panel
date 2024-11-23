@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light background color for a minimalist vibe */
+    color: navy; /* Navy text color for contrast */
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+header {
+    text-align: center;
+    padding-bottom: 60px;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.subtitle {
+    font-size: 1.3em;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 20px; /* Added gap for spacing between cards */
+}
+.contact-card {
+    background-color: white; /* White background for contact cards */
+    color: navy; /* Navy text color for contrast */
+    padding: 40px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+.contact-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+.contact-card p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.icon {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: navy; /* Navy background for buttons */
+    color: white; /* Button text color remains white */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1.1em;
+}
+.btn:hover {
+    background-color: #1a1a1a; /* Darker color on hover (optional) */
+}
+.global-numbers {
+    margin-top: 15px;
+}
+.global-numbers a {
+    color: #0000FF; /* Link color */
+    text-decoration: none;
+}
+.global-numbers a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+@media (max-width: 768px) {
+    .contact-options {
+        flex-direction: column;
+    }
+    .contact-card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+}

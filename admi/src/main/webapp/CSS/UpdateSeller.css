@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* UpdateSellerInformation.css */
+
+:root {
+    --primary-color: #001f3f; /* Navy Blue */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #007bff; /* Bright Blue for buttons */
+    --text-color: #333333; /* Dark Text */
+    --background-color: #f0f2f5; /* Light Background */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 40px; /* Increased padding for body */
+    line-height: 1.6;
+}
+
+.registration-container {
+    background-color: var(--secondary-color);
+    padding: 30px; /* Increased padding for container */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 25px; /* Increased margin for more space below the heading */
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px; /* Increased margin for more space between input fields */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Increased margin for better spacing */
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* Increased padding inside input fields */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 12px 20px; /* Increased padding for buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}

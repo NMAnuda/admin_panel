@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light background color for a minimalist vibe */
+    color: navy; /* Default navy text color */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 40px; /* Adjusted for balance */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px; /* Reduced margin for a tighter look */
+}
+
+.subtitle {
+    font-size: 1.3em;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.about-box {
+    background-color: #003366; /* Light navy blue background */
+    border: 2px solid #00509E; /* Light navy blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px; /* Inner padding for the box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 40px; /* Space above the box */
+    color: white; /* White text color */
+}
+
+.about-content {
+    margin-top: 20px; /* Space above the content */
+}
+
+h2 {
+    color: white; /* White for subheadings */
+    font-size: 1.8em; /* Subheading size */
+    margin-top: 30px; /* Space above subheadings */
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+ul li {
+    padding: 5px 0; /* Space between list items */
+    position: relative; /* For custom bullet */
+}
+
+ul li::before {
+    content: '•'; /* Custom bullet */
+    color: white; /* White color for bullet */
+    position: absolute;
+    left: -20px; /* Position bullet */
+    font-size: 1.5em; /* Size of bullet */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Smaller heading on mobile */
+    }
+}

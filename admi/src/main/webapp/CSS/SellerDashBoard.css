@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light blue-grey background for contrast */
+    color: #333333; /* Dark grey text color for readability */
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 600px; /* Set a fixed width for the profile container */
+    margin: 50px auto; /* Center the container on the page */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the profile section */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    border: 1px solid #e0e0e0; /* Light grey border */
+}
+
+/* Profile Header */
+h2 {
+    text-align: center;
+    color: #1d3557; /* Dark navy blue for header */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Profile Details */
+.profile-details p {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #333333;
+}
+
+.profile-details p strong {
+    color: #1d3557; /* Navy blue color for labels */
+}
+
+/* Action Buttons */
+.profile-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    align-items: center;
+}
+
+/* Update Button */
+.update-button {
+    background-color: #457b9d; /* Light navy blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.update-button:hover {
+    background-color: #1d3557; /* Darker navy blue on hover */
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #e63946; /* Red color for delete button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.delete-button:hover {
+    background-color: #d62839; /* Darker red on hover */
+}
+
+/* Form Styling */
+.delete-form {
+    display: inline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    .profile-details p {
+        font-size: 16px;
+    }
+
+    .profile-actions {
+        flex-direction: column; /* Stack the buttons vertically on small screens */
+        align-items: center;
+    }
+
+    .profile-actions .update-button,
+    .profile-actions .delete-button {
+        width: 100%; /* Full width buttons on small screens */
+        margin-bottom: 10px; /* Add spacing between buttons */
+    }
+
+    .profile-actions .delete-button:last-child {
+        margin-bottom: 0;
+    }
+}

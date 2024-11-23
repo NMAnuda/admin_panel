@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+
+  <display-name>admi</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+	<servlet-name>insertservlet</servlet-name>
+	<servlet-class>admin.insertservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>insertservlet</servlet-name>
+	<url-pattern>/insertservlet</url-pattern>
+</servlet-mapping>
+  
+   <servlet>
+	<servlet-name>insert_admin_servlet</servlet-name>
+	<servlet-class>admin.insert_admin_servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>insert_admin_servlet</servlet-name>
+	<url-pattern>/insert_admin_servlet</url-pattern>
+</servlet-mapping>
+  
+   <servlet>
+	<servlet-name>FeedBackInsertServlet</servlet-name>
+	<servlet-class>admin.FeedBackInsertServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>FeedBackInsertServlet</servlet-name>
+	<url-pattern>/FeedBackInsertServlet</url-pattern>
+</servlet-mapping>
+  
+  
+  <servlet>
+	<servlet-name>feedbackGetServlet</servlet-name>
+	<servlet-class>admin.feedbackGetServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>feedbackGetServlet</servlet-name>
+	<url-pattern>/feedbackGetServlet</url-pattern>
+</servlet-mapping>
+  
+  
+<servlet>
+    <servlet-name>getservlet</servlet-name>
+    <servlet-class>admin.getservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>getservlet</servlet-name>
+    <url-pattern>/getservlet</url-pattern>
+</servlet-mapping>
+
+
+  
+<servlet>
+    <servlet-name>feedget</servlet-name>
+    <servlet-class>admin.feedget</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>feedget</servlet-name>
+    <url-pattern>/feedget</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>sellarGetServlet</servlet-name>
+    <servlet-class>admin.sellarGetServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>sellarGetServlet</servlet-name>
+    <url-pattern>/sellarGetServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>updateservlet</servlet-name>
+    <servlet-class>admin.updateservlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>updateservlet</servlet-name>
+    <url-pattern>/updateservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>login_servlet</servlet-name>
+    <servlet-class>admin.login_servlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>login_servlet</servlet-name>
+    <url-pattern>/login_servlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>sellarlogin</servlet-name>
+    <servlet-class>admin.sellarlogin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>sellarlogin</servlet-name>
+    <url-pattern>/sellarlogin</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>delete_servlet</servlet-name>
+    <servlet-class>admin.delete_servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>delete_servlet</servlet-name>
+    <url-pattern>/delete_servlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>SellerRegServlet</servlet-name>
+		<servlet-class>admin.SellerRegServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SellerRegServlet</servlet-name>
+		<url-pattern>/SellerRegServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SellerUpdateServlet</servlet-name>
+		<servlet-class>admin.SellerUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SellerUpdateServlet</servlet-name>
+		<url-pattern>/SellerUpdateServlet</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>admin.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/UpdateServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>admin.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/DeleteServlet</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>cartdeletservlet</servlet-name>
+		<servlet-class>admin.cartdeletservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cartdeletservlet</servlet-name>
+		<url-pattern>/cartdeletservlet</url-pattern>
+	</servlet-mapping>
+
+
+
+<servlet>
+		<servlet-name>cartinsertservlet</servlet-name>
+		<servlet-class>admin.cartinsertservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cartinsertservlet</servlet-name>
+		<url-pattern>/cartinsertservlet</url-pattern>
+	</servlet-mapping>
+
+
+
+<servlet>
+		<servlet-name>cartupdateservlet</servlet-name>
+		<servlet-class>admin.cartupdateservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cartupdateservlet</servlet-name>
+		<url-pattern>/cartupdateservlet</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>FAQServlet</servlet-name>
+		<servlet-class>admin.FAQServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FAQServlet</servlet-name>
+		<url-pattern>/FAQServlet</url-pattern>
+	</servlet-mapping>
+
+	
+
+<servlet>
+		<servlet-name>faqdisplayservlet</servlet-name>
+		<servlet-class>admin.faqdisplayservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>faqdisplayservlet</servlet-name>
+		<url-pattern>/faqdisplayservlet</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
+
